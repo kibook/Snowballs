@@ -71,5 +71,7 @@ function showHelpNotification()
 end
 
 AddEventHandler('playerSpawned', function()
-    showHelpNotification()
+    if IsNextWeatherType('XMAS') then
+        showHelpNotification()
+    end
 end)
